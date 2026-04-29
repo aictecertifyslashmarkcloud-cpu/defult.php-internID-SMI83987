@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Verification</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg, #41d7e7, #6fe3f2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 720px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      display: none;
+    }
+
+    /* Header Image */
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Verified Section */
+    .verified {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .verified .icon {
+      font-size: 42px;
+      color: #27c6da;
+    }
+
+    .verified h2 {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #000;
+    }
+
+    /* Details Box */
+    .details {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .details h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .details p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 25px;
+    }
+
+    
+.icon img {
+  width: 80px;
+  height: auto;
+}
+
+/* ✅ Mobile View */
+@media (max-width: 600px) {
+  .icon img {
+    width: 60px;
+  }
+}
+
+
+    /* ✅ Mobile View */
+    @media (max-width: 600px) {
+      .verified h2 {
+        font-size: 18px;
+      }
+
+      .details p {
+        font-size: 14px;
+      }
+
+      .header img {
+        max-height: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body onload="showVerification()">
+
+  <div class="container" id="certificate">
+    
+    <!-- Header Image -->
+    <div class="header">
+      <header-image.png>
+        <img src="C:\Users\2479915\Documents\Screenshot 2026-04-29 160002.png" alt="">
+    </div>
+
+    <!-- Verified Message -->
+    <div class="verified">
+      
+<div class="icon">
+  <img src="https://i.pinimg.com/originals/d8/16/4b/d8164b6fb6eebeabbd54e842971c050f.gif" alt="Verified">
+</div>
+
+      <h2>Internship Completion Certificate Successfully Verified!</h2>
+    </div>
+
+    <!-- Intern Details -->
+    <div class="details">
+      <h3>Intern Details</h3>
+      <p><strong>Name:</strong>VADLA SATHEESH</p>
+      <p><strong>Intern ID:</strong> SMI83987</p>
+      <p><strong>Domain:</strong> Artificial Intelligence Internship</p>
+      <p><strong>Batch:</strong> December 15, 2025 – April 15, 2026</p>
+      <p><strong>No. of Credits:</strong> 3</p>
+      <p><strong>Internship Status:</strong> Completed</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2023 Slash Mark | All Rights Reserved
+    </div>
+
+  </div>
+
+  <script>
+    function showVerification() {
+      alert("Verification successful!");
+      document.getElementById("certificate").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
